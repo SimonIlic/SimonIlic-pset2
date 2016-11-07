@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SimonIlic-pset2</string>
+    <string name="welcome_string">This is a mad libs app.\nInput some words when prompted and we will have a laugh</string>
 </resources>
