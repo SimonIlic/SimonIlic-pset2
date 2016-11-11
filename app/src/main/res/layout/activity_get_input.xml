@@ -11,11 +11,49 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="mprog.simon.simonilic_pset2.GetInputActivity">
 
-    <EditText
+    <TextView
+        android:text="Fill in the requested words below to complete the Story!"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/inputText"
-        android:hint="noun" />
+        android:id="@+id/textView2"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="@string/word_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/word_countView"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/inputText"
+            android:hint="@string/inputText_hint"
+            android:textAlignment="textStart"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:elevation="0dp"
+            android:onClick="handleInputText"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/extra_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/extra_hint"
+        android:textAlignment="center" />
+
 </LinearLayout>

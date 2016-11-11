@@ -16,6 +16,8 @@ public class StartActivity extends AppCompatActivity {
     /* handle begin button click */
     public void forward(View view) {
         Intent intent = new Intent(this, GetInputActivity.class);
+        intent.putExtra("story_id", 0);
         startActivity(intent);
+        finish();
     }
 }

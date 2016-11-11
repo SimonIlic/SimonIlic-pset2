@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:id="@+id/activity_start"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,22 +13,28 @@
     tools:context="mprog.simon.simonilic_pset2.StartActivity">
 
 
-    <ImageView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/madlibs"
-        android:layout_gravity="center_horizontal"
-        android:id="@+id/mad_libs_logo"
-        android:contentDescription="mad libs logo" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:text="@string/begin_button_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:textSize="14sp"
-        android:onClick="forward"
-        style="@style/Widget.AppCompat.Button" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="241dp"
+            app:srcCompat="@drawable/madlibs"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/mad_libs_logo"
+            android:contentDescription="mad libs logo" />
+
+        <Button
+            android:text="@string/begin_button_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:textSize="14sp"
+            android:onClick="forward"
+            style="@style/Widget.AppCompat.Button" />
+    </LinearLayout>
 
     <TextView
         android:text="@string/welcome_string"

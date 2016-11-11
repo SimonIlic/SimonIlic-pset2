@@ -33,7 +33,7 @@ public class Story implements Serializable {
         text = "";
         placeholders = new ArrayList<String>();
         filledIn = 0;
-        htmlMode = false;
+        htmlMode = true;
         clear();
     }
 
@@ -100,7 +100,8 @@ public class Story implements Serializable {
                     text += " <" + placeholders.size() + ">";
                 }
                 // "<plural-noun>" becomes "plural noun"
-                String placeholder = word.substring(1, word.length() - 1).replace("-", " ");
+                // NOTE: I added a toLowerCase() to get rid of the goofy capitalization sometimes
+                String placeholder = word.substring(1, word.length() - 1).replace("-", " ").toLowerCase();
                 placeholders.add(placeholder);
             } else {
                 // a regular word; just concatenate
