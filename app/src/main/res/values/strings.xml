@@ -7,7 +7,7 @@
     </string>
     <string name="word_count">%1$d word(s) to go!</string>
     <string name="inputText_hint">%1$s</string>
-    <string name="extra_hint">Type in a %1$s</string>
+    <string name="extra_hint">Type in a/an %1$s</string>
     <string name="story">%1$s</string>
     <string name="restart_button">Make another story</string>
     <string name="begin_button_text">Begin</string>
