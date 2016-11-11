@@ -13,7 +13,7 @@
     tools:context="mprog.simon.simonilic_pset2.DisplayStoryActivity">
 
     <TextView
-        android:text="Here's our Story:"
+        android:text="@string/present_story"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
@@ -37,6 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/button"
+            android:background="@color/colorPrimary"
             android:onClick="newStory"/>
     </LinearLayout>
 

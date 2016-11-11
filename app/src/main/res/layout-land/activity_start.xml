@@ -20,11 +20,11 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="241dp"
+            android:layout_height="200dp"
             app:srcCompat="@drawable/madlibs"
             android:layout_gravity="center_horizontal"
             android:id="@+id/mad_libs_logo"
-            android:contentDescription="mad libs logo" />
+            android:contentDescription="@string/image_description" />
 
         <Button
             android:text="@string/begin_button_text"
@@ -33,6 +33,7 @@
             android:id="@+id/button"
             android:textSize="14sp"
             android:onClick="forward"
+            android:background="@color/colorPrimary"
             style="@style/Widget.AppCompat.Button" />
     </LinearLayout>
 
